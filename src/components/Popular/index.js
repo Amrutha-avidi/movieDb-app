@@ -66,7 +66,7 @@ class Popular extends Component {
   }
 
   render() {
-    const {currentApiStatus} = this.state
+    const {currentApiStatus, pageNo} = this.state
     return (
       <div className="popular-container">
         <Header />
@@ -80,6 +80,7 @@ class Popular extends Component {
           >
             Previous Page
           </button>
+          <p>{pageNo}</p>
           <button
             type="button"
             className="page-button"
